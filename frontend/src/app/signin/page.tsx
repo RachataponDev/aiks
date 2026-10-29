@@ -180,12 +180,7 @@ export default function SignInPage() {
         </motion.div>
       </main>
 
-      {/* Footer minimal info */}
-      <footer className="relative z-10 py-6 text-center text-[11px] font-mono text-zinc-400 border-t border-zinc-800/60">
-        © 2026 LXVII Hospitality Operations System. All rights reserved.
-      </footer>
-
-      {/* Web Developer Profile Footer */}
+      {/* Unified Full-Width Developer Profile Footer */}
       <WebDeveloperFooter />
 
     </div>
