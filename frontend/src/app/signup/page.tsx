@@ -10,8 +10,8 @@ import { WebDeveloperFooter } from '@/components/WebDeveloperFooter';
 
 export default function SignUpPage() {
   const [fullName, setFullName] = useState('Store Manager');
-  const [restaurantName, setRestaurantName] = useState('Restaura Cafe & Bistro');
-  const [email, setEmail] = useState('manager@restaura.com');
+  const [restaurantName, setRestaurantName] = useState('LXVII Riverside Cafe');
+  const [email, setEmail] = useState('manager@lxvii.com');
   const [password, setPassword] = useState('••••••••••••');
   const [agreeTerms, setAgreeTerms] = useState(true);
   const [loading, setLoading] = useState(false);
@@ -27,7 +27,7 @@ export default function SignUpPage() {
 
     setTimeout(() => {
       setLoading(false);
-      localStorage.setItem('aiks_member_session', JSON.stringify({ email: email || 'member@restaura.com', name: fullName, loggedInAt: new Date().toISOString() }));
+      localStorage.setItem('aiks_member_session', JSON.stringify({ email: email || 'manager@lxvii.com', name: fullName, loggedInAt: new Date().toISOString() }));
       toast.success('Account created successfully! Member discounts are now unlocked.');
       router.push('/#deals');
     }, 700);
@@ -121,7 +121,7 @@ export default function SignUpPage() {
                     value={restaurantName}
                     onChange={(e) => setRestaurantName(e.target.value)}
                     required
-                    placeholder="e.g. Restaura Bangkok Branch"
+                    placeholder="e.g. LXVII Bangkok Riverside"
                     className="w-full pl-10 pr-4 py-2.5 text-xs bg-zinc-900 border border-zinc-700 rounded-lg text-white placeholder-zinc-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition"
                   />
                 </div>

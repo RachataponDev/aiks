@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 import { WebDeveloperFooter } from '@/components/WebDeveloperFooter';
 
 export default function SignInPage() {
-  const [email, setEmail] = useState('manager@restaura.com');
+  const [email, setEmail] = useState('manager@lxvii.com');
   const [password, setPassword] = useState('••••••••••••');
   const [rememberMe, setRememberMe] = useState(true);
   const [loading, setLoading] = useState(false);
@@ -21,7 +21,7 @@ export default function SignInPage() {
 
     setTimeout(() => {
       setLoading(false);
-      localStorage.setItem('aiks_member_session', JSON.stringify({ email: email || 'manager@restaura.com', loggedInAt: new Date().toISOString() }));
+      localStorage.setItem('aiks_member_session', JSON.stringify({ email: email || 'manager@lxvii.com', loggedInAt: new Date().toISOString() }));
       toast.success('Welcome back! Signed in successfully.');
       router.push('/dashboard');
     }, 700);
@@ -98,7 +98,7 @@ export default function SignInPage() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
-                    placeholder="manager@restaura.com"
+                    placeholder="manager@lxvii.com"
                     className="w-full pl-10 pr-4 py-2.5 text-xs bg-zinc-900 border border-zinc-700 rounded-lg text-white placeholder-zinc-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition"
                   />
                 </div>

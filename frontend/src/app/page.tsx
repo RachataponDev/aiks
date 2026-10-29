@@ -89,7 +89,7 @@ export default function RestaurantLandingPage() {
       if (activeMember) {
         const parsed = JSON.parse(activeMember);
         setIsMemberLoggedIn(true);
-        setMemberEmail(parsed.email || 'member@restaura.com');
+        setMemberEmail(parsed.email || 'member@lxvii.com');
       }
     } catch {}
   }, []);
@@ -690,7 +690,7 @@ export default function RestaurantLandingPage() {
                   </div>
                   <div>
                     <h4 className="text-xs font-bold text-white uppercase tracking-wider mb-0.5">Enterprise Inquiries</h4>
-                    <p className="text-xs text-zinc-400">contact@restaura.ai • support@restaura.ai</p>
+                    <p className="text-xs text-zinc-400">contact@lxvii.com • chaemsai_r@silpakorn.edu</p>
                   </div>
                 </div>
               </div>
@@ -733,7 +733,7 @@ export default function RestaurantLandingPage() {
                     <input
                       type="text"
                       required
-                      placeholder="e.g. Restaura Cafe"
+                      placeholder="e.g. LXVII Bistro"
                       className="w-full px-3.5 py-2.5 text-xs bg-zinc-950 border border-zinc-700 rounded-[2px] text-white focus:outline-none focus:border-amber-500"
                     />
                   </div>
