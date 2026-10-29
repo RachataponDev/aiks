@@ -22,6 +22,7 @@ import {
 import { toast } from 'sonner';
 import { DashboardNavbar } from '@/components/DashboardNavbar';
 import { DashboardSidebar } from '@/components/DashboardSidebar';
+import { MobileBottomNav } from '@/components/MobileBottomNav';
 
 interface ClearancePromotion {
   id: string;
@@ -185,10 +186,10 @@ export default function PromotionsGeneratorPage() {
     <div className="flex min-h-screen bg-zinc-50/70 font-sans antialiased text-zinc-900">
       <DashboardSidebar currentPath="/dashboard/promotions" isDataReady={true} />
 
-      <div className="flex-1 flex flex-col min-w-0">
+      <div className="flex-1 flex flex-col min-w-0 pb-24 md:pb-10">
         <DashboardNavbar />
 
-        <main className="flex-1 p-6 md:p-10 max-w-6xl w-full mx-auto space-y-8">
+        <main className="flex-1 p-3.5 sm:p-6 md:p-10 max-w-6xl w-full mx-auto space-y-6 sm:space-y-8">
           
           {/* Header */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
@@ -473,6 +474,9 @@ export default function PromotionsGeneratorPage() {
 
         </main>
       </div>
+
+      {/* Mobile Magic Bottom Menu for screens <= 768px (down to 360px) */}
+      <MobileBottomNav currentPath="/dashboard/promotions" isDataReady={true} />
     </div>
   );
 }

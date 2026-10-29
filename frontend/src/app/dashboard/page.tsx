@@ -19,6 +19,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
 import { DashboardNavbar } from '@/components/DashboardNavbar';
 import { DashboardSidebar } from '@/components/DashboardSidebar';
+import { MobileBottomNav } from '@/components/MobileBottomNav';
 
 export default function DatasetOnboardingPage() {
   const [fileRegistry, setFileRegistry] = useState<Record<string, any>>({});
@@ -301,7 +302,7 @@ export default function DatasetOnboardingPage() {
         <DashboardSidebar currentPath="/dashboard" isDataReady={isReady} />
 
         {/* PERFECTLY CENTERED MAIN VIEWPORT (Supports down to 360px) */}
-        <main className="flex-1 min-h-[calc(100vh-4rem)] flex items-center justify-center p-4 sm:p-8 lg:p-12 w-full">
+        <main className="flex-1 min-h-[calc(100vh-4rem)] flex items-center justify-center p-3.5 sm:p-8 lg:p-12 w-full pb-24 md:pb-12">
           
           <div className="w-full max-w-md mx-auto flex flex-col items-center justify-center text-center space-y-10 sm:space-y-14 py-6 sm:py-10">
             
@@ -455,6 +456,9 @@ export default function DatasetOnboardingPage() {
 
         </main>
       </div>
+
+      {/* Mobile Magic Bottom Navigation */}
+      <MobileBottomNav currentPath="/dashboard" isDataReady={isReady} />
 
       {/* 3. MODAL: AUTO-CLEANED ISSUES SUMMARY (CLEAN & READABLE) */}
       <AnimatePresence>
