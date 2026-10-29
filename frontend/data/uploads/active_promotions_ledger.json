@@ -39,11 +39,12 @@
     "isActive": true,
     "createdAt": "2026-10-29T06:29:11.215Z",
     "metrics": {
-      "redemptionCount": 0,
-      "totalRevenueThb": 0,
-      "unitsSold": 0
+      "redemptionCount": 1,
+      "totalRevenueThb": 75,
+      "unitsSold": 1
     },
-    "description": "Price is well above the total recipe cost of 37.25 THB, securing a solid 38 THB margin per unit while averting total loss from mango and sticky rice perishability."
+    "description": "Price is well above the total recipe cost of 37.25 THB, securing a solid 38 THB margin per unit while averting total loss from mango and sticky rice perishability.",
+    "couponsRedeemed": 1
   },
   {
     "id": "PROMO-03",

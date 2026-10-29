@@ -33,6 +33,7 @@ import {
 import { toast } from 'sonner';
 import { PromotionSuggestion } from '@/types/dashboard';
 import { motion } from 'framer-motion';
+import { WebDeveloperFooter } from '@/components/WebDeveloperFooter';
 
 export default function RestaurantLandingPage() {
   const [copiedCode, setCopiedCode] = useState<string | null>(null);
@@ -783,12 +784,12 @@ export default function RestaurantLandingPage() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <span className="font-serif text-2xl font-black tracking-wider text-white">
-                  <span className="text-amber-400">R</span>estaura
+                  <span className="text-amber-400">LXVII</span>
                 </span>
                 <span className="w-1.5 h-1.5 rounded-full bg-amber-400 mb-1" />
               </div>
               <p className="text-zinc-400 leading-relaxed mb-5">
-                Authentic handcrafted culinary cuisine prepared by executive chefs. Serving Bangkok Riverside since 2018 with locally-sourced ingredients.
+                LXVII — Authentic handcrafted culinary cuisine prepared by executive chefs. Serving Bangkok Riverside since 2018 with locally-sourced ingredients.
               </p>
               <div className="flex items-center gap-3 text-zinc-400">
                 <span className="w-8 h-8 rounded-[2px] bg-zinc-800 flex items-center justify-center text-xs font-bold hover:bg-amber-400 hover:text-black cursor-pointer transition">FB</span>
@@ -867,7 +868,7 @@ export default function RestaurantLandingPage() {
         <div className="border-t border-zinc-800/80 py-5 bg-[#0d0d0d]">
           <div className="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-zinc-500 font-mono text-[11px]">
             <div>
-              © 2026 Restaura Fine Dining • Smart Hospitality SME Ecosystem
+              © 2026 LXVII Fine Dining • Smart Hospitality SME Ecosystem
             </div>
 
             <div className="flex items-center gap-4">
@@ -893,6 +894,9 @@ export default function RestaurantLandingPage() {
         </div>
 
       </footer>
+
+      {/* Web Developer Profile Footer (ตามรูป) */}
+      <WebDeveloperFooter />
 
     </div>
   );

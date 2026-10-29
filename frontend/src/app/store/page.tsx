@@ -7,6 +7,7 @@ import {
   Clock, Copy, Check, MapPin, Star, Zap, ArrowLeft, Phone, 
   Ticket, QrCode, CheckCircle2, Store, Smartphone, X, AlertCircle, Sparkles, Hourglass
 } from 'lucide-react';
+import { WebDeveloperFooter } from '@/components/WebDeveloperFooter';
 
 const FALLBACK_PROMOS = [
   { 
@@ -196,7 +197,7 @@ export default function StorePage() {
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between text-white">
           <div className="flex items-center gap-2">
             <Store className="w-5 h-5 text-amber-400" />
-            <span className="font-bold tracking-tight text-lg">Baan Riverside Café</span>
+            <span className="font-black tracking-tight text-xl font-serif">LXVII</span>
           </div>
           <div className="flex items-center gap-4 text-sm">
             <a href="#deals" className="hidden sm:inline hover:text-amber-300 transition">Flash Deals</a>
@@ -215,7 +216,7 @@ export default function StorePage() {
       <header className="relative h-[480px] sm:h-[520px] flex items-center">
         <img 
           src="/store-hero.jpg" 
-          alt="Baan Riverside Café interior" 
+          alt="LXVII dining interior" 
           className="absolute inset-0 w-full h-full object-cover" 
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30" />
@@ -225,10 +226,10 @@ export default function StorePage() {
             <Zap className="w-4 h-4 fill-zinc-950" /> Live In-Store Flash Pass — Ends in {countdown}
           </div>
           <h1 className="text-3xl sm:text-5xl font-black tracking-tight max-w-xl leading-tight">
-            Fresh-baked mornings, riverside afternoons.
+            LXVII Riverside Dining &amp; Artisan Specials.
           </h1>
           <p className="mt-4 text-zinc-200 max-w-md text-sm sm:text-base leading-relaxed">
-            Handcrafted Thai & French café classics by the Chao Phraya. Tap below to present digital flash coupons directly at our counter.
+            Handcrafted Thai &amp; French café classics by the Chao Phraya. Tap below to present digital flash coupons directly at our counter.
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-4 text-sm">
             <a 
@@ -413,10 +414,13 @@ export default function StorePage() {
 
       {/* Footer */}
       <footer className="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-zinc-500">
-        <span className="flex items-center gap-1.5"><MapPin className="w-4 h-4 text-amber-600" /> 88 Charoen Krung Rd, Bangkok Riverside</span>
-        <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-amber-600" /> Open daily 07:00 – 20:00</span>
-        <span className="flex items-center gap-1.5"><Phone className="w-4 h-4 text-amber-600" /> 02-123-4567</span>
+        <span className="flex items-center gap-1.5 font-bold text-zinc-800"><Store className="w-4 h-4 text-amber-600" /> LXVII • 88 Charoen Krung Rd, Bangkok</span>
+        <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-amber-600" /> Open daily 07:00 – 22:00</span>
+        <span className="flex items-center gap-1.5"><Phone className="w-4 h-4 text-amber-600" /> +66 934741115</span>
       </footer>
+
+      {/* Developer Footer as requested */}
+      <WebDeveloperFooter />
 
       {/* ========================================================================= */}
       {/* REALISTIC IN-STORE REDEMPTION MODAL (Mock Coupon Execution)              */}

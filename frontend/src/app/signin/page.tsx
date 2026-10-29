@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import { Mail, Lock, ArrowRight, ShieldCheck, Sparkles, ChefHat, CheckCircle2, ArrowLeft } from 'lucide-react';
 import { toast } from 'sonner';
 import { motion } from 'framer-motion';
+import { WebDeveloperFooter } from '@/components/WebDeveloperFooter';
 
 export default function SignInPage() {
   const [email, setEmail] = useState('manager@restaura.com');
@@ -45,7 +46,7 @@ export default function SignInPage() {
 
         <Link href="/" className="flex items-center gap-2">
           <span className="text-2xl font-serif font-black tracking-wider text-white">
-            <span className="text-amber-400">R</span>estaura
+            <span className="text-amber-400">LXVII</span>
           </span>
         </Link>
 
@@ -181,8 +182,11 @@ export default function SignInPage() {
 
       {/* Footer minimal info */}
       <footer className="relative z-10 py-6 text-center text-[11px] font-mono text-zinc-400 border-t border-zinc-800/60">
-        © 2026 Restaura Hospitality AI Intelligence System. All rights reserved.
+        © 2026 LXVII Hospitality Operations System. All rights reserved.
       </footer>
+
+      {/* Web Developer Profile Footer */}
+      <WebDeveloperFooter />
 
     </div>
   );
