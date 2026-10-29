@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Toaster } from "sonner";
+import { PrivacyConsentModal } from "@/components/PrivacyConsentModal";
 import "./globals.css";
 
 const inter = Inter({
@@ -131,6 +132,7 @@ export default function RootLayout({
       </head>
       <body className="bg-white text-zinc-900 antialiased font-sans">
         {children}
+        <PrivacyConsentModal />
         <Toaster
           position="bottom-right"
           theme="light"
