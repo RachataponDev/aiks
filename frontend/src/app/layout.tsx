@@ -73,7 +73,7 @@ export default function RootLayout({
         "telephone": "+66 934741115",
         "email": "chaemsai_r@silpakorn.edu",
         "servesCuisine": ["Thai", "French", "Cafe", "Bakery"],
-        "priceRange": "฿฿",
+        "priceRange": "$$",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "88 Charoen Krung Rd, Bangkok Riverside",
@@ -98,7 +98,7 @@ export default function RootLayout({
         "founder": {
           "@type": "Person",
           "name": "Rachatapon Chaemsai",
-          "alternateName": "นายรชตพล แจ่มใส",
+          "alternateName": "Rdev",
           "jobTitle": "Lead Web & System Developer",
           "affiliation": "BIM Silpakorn University",
           "email": "chaemsai_r@silpakorn.edu",

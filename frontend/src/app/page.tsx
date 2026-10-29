@@ -381,9 +381,9 @@ export default function RestaurantLandingPage() {
           {promotions.length === 0 ? (
             <div className="text-center py-12 px-4 rounded-xl border border-dashed border-zinc-800 bg-[#161619] max-w-xl mx-auto">
               <Sparkles className="w-8 h-8 text-zinc-600 mx-auto mb-3" />
-              <p className="text-sm font-semibold text-zinc-300">ขณะนี้ยังไม่มีโปรโมชั่นหรือคูปองที่เปิดใช้งาน</p>
+              <p className="text-sm font-semibold text-zinc-300">No active flash promotions available at this moment</p>
               <p className="text-xs text-zinc-500 mt-1">
-                โปรโมชั่นใหม่จะถูกปล่อยจากระบบ AI Clearance เมื่อตรวจพบวัตถุดิบที่ต้องการระบายสต็อก
+                New promotional vouchers are scheduled automatically whenever excess perishable inventory requires rapid stock turnover.
               </p>
             </div>
           ) : (
@@ -895,7 +895,7 @@ export default function RestaurantLandingPage() {
 
       </footer>
 
-      {/* Web Developer Profile Footer (ตามรูป) */}
+      {/* Full-Width Web Developer Profile Footer with Cookies & GPS */}
       <WebDeveloperFooter />
 
     </div>

@@ -361,7 +361,7 @@ export default function StorePage() {
                       }`}
                     >
                       <Ticket className="w-4 h-4" /> 
-                      {isSoldOut ? 'Coupons Depleted (สิทธิ์เต็มแล้ว)' : 'Use In-Store Coupon (กดใช้หน้าร้าน)'}
+                      {isSoldOut ? 'Coupons Depleted (Sold Out)' : 'Use In-Store Coupon'}
                     </button>
 
                     <div className="flex items-center gap-2">
@@ -412,14 +412,7 @@ export default function StorePage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-zinc-500">
-        <span className="flex items-center gap-1.5 font-bold text-zinc-800"><Store className="w-4 h-4 text-amber-600" /> LXVII • 88 Charoen Krung Rd, Bangkok</span>
-        <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-amber-600" /> Open daily 07:00 – 22:00</span>
-        <span className="flex items-center gap-1.5"><Phone className="w-4 h-4 text-amber-600" /> +66 934741115</span>
-      </footer>
-
-      {/* Developer Footer as requested */}
+      {/* Full-Width Footer with Permissions & Developer Credentials */}
       <WebDeveloperFooter />
 
       {/* ========================================================================= */}
@@ -476,7 +469,7 @@ export default function StorePage() {
                     onClick={handleConfirmRedeem}
                     className="w-full py-3.5 bg-zinc-950 hover:bg-black active:scale-[0.98] text-white font-black text-sm rounded-xl transition shadow-lg flex items-center justify-center gap-2 cursor-pointer"
                   >
-                    <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Tap to Redeem (กดยืนยันใช้คูปอง)
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Tap to Redeem Voucher
                   </button>
                   <button
                     onClick={() => setActiveRedeemPromo(null)}
