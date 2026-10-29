@@ -42,14 +42,6 @@ export default function RestaurantLandingPage() {
   const [memberEmail, setMemberEmail] = useState('');
   const [claimedPromos, setClaimedPromos] = useState<string[]>([]);
 
-  // Reservation form state
-  const [resName, setResName] = useState('');
-  const [resEmail, setResEmail] = useState('');
-  const [resPhone, setResPhone] = useState('');
-  const [resGuests, setResGuests] = useState('2 Persons');
-  const [resDate, setResDate] = useState('2026-10-30');
-  const [resTime, setResTime] = useState('18:00');
-
   // Load active promotions from API (or fallback if empty)
   useEffect(() => {
     const fetchPromotions = async () => {
@@ -101,11 +93,6 @@ export default function RestaurantLandingPage() {
     setTimeout(() => setCopiedCode(null), 2000);
   };
 
-  const handleReservation = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast.success(`Table Reserved for ${resGuests} on ${resDate} at ${resTime}! Confirmation sent to ${resEmail || 'email'}.`);
-  };
-
   return (
     <div className="min-h-screen bg-white text-zinc-800 font-sans">
       
@@ -113,10 +100,10 @@ export default function RestaurantLandingPage() {
       <nav className="fixed top-0 inset-x-0 z-40 bg-[#141414]/95 backdrop-blur-md border-b border-white/10 text-white transition-all duration-300">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           
-          {/* Brand Logo matching template */}
+          {/* Brand Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <span className="text-2xl font-serif font-black tracking-wider text-white group-hover:text-amber-400 transition">
-              <span className="text-amber-400">R</span>estaura
+              <span className="text-amber-400">LXVII</span>
             </span>
             <span className="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-amber-400 mb-1" />
           </Link>
@@ -141,13 +128,13 @@ export default function RestaurantLandingPage() {
           {/* Right Action Icons & Controls */}
           <div className="flex items-center gap-4">
             
-            {/* RESERVATION Box Button */}
-            <a
-              href="#reservation"
+            {/* View Store Button */}
+            <Link
+              href="/store"
               className="hidden sm:inline-flex items-center px-5 py-2.5 text-[11px] font-bold tracking-widest uppercase border border-amber-400/80 text-amber-300 hover:bg-amber-400 hover:text-zinc-950 transition rounded-[2px]"
             >
-              RESERVATION
-            </a>
+              EXPLORE STORE
+            </Link>
 
             {/* Search Icon */}
             <button 
@@ -239,111 +226,30 @@ export default function RestaurantLandingPage() {
               Specialty Of Foods
             </motion.h1>
 
-            <motion.a
+            <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.5, duration: 0.5 }}
-              href="#reservation"
-              className="inline-block px-8 py-3.5 border-2 border-amber-400 text-amber-300 hover:bg-amber-400 hover:text-zinc-950 font-bold text-xs tracking-widest uppercase transition rounded-[2px]"
+              className="flex items-center justify-center gap-4"
             >
-              Reservation
-            </motion.a>
+              <Link
+                href="/store"
+                className="inline-block px-8 py-3.5 bg-amber-400 text-zinc-950 hover:bg-amber-300 font-extrabold text-xs tracking-widest uppercase transition rounded-[2px] shadow-lg shadow-amber-400/20"
+              >
+                Claim Flash Deals
+              </Link>
+              <a
+                href="#about"
+                className="inline-block px-8 py-3.5 border-2 border-white/40 text-white hover:border-amber-400 hover:text-amber-300 font-bold text-xs tracking-widest uppercase transition rounded-[2px]"
+              >
+                Learn More
+              </a>
+            </motion.div>
           </motion.div>
         </div>
       </section>
 
-      {/* 3. PLEASE BOOK A TABLE FLOATING FORM (Exact match to screenshot 1 & 2) */}
-      <section id="reservation" className="relative -mt-28 z-30 max-w-5xl mx-auto px-4">
-        <motion.div 
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-50px' }}
-          transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="bg-white rounded-[4px] p-8 shadow-2xl border border-zinc-200"
-        >
-          <h3 className="font-serif text-2xl sm:text-3xl font-extrabold text-center text-zinc-900 uppercase tracking-widest mb-6">
-            Please Book A Table
-          </h3>
-
-          <form onSubmit={handleReservation} className="space-y-4">
-            {/* Row 1: Name, Email, Phone */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <input
-                type="text"
-                placeholder="Enter Your Name"
-                value={resName}
-                onChange={(e) => setResName(e.target.value)}
-                required
-                className="w-full px-3.5 py-3 text-xs border border-zinc-300 rounded-[2px] focus:outline-none focus:border-amber-500"
-              />
-              <input
-                type="email"
-                placeholder="Email Address"
-                value={resEmail}
-                onChange={(e) => setResEmail(e.target.value)}
-                required
-                className="w-full px-3.5 py-3 text-xs border border-zinc-300 rounded-[2px] focus:outline-none focus:border-amber-500"
-              />
-              <input
-                type="tel"
-                placeholder="Telephone Number"
-                value={resPhone}
-                onChange={(e) => setResPhone(e.target.value)}
-                required
-                className="w-full px-3.5 py-3 text-xs border border-zinc-300 rounded-[2px] focus:outline-none focus:border-amber-500"
-              />
-            </div>
-
-            {/* Row 2: Number of Guests, Date, Time */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <select
-                value={resGuests}
-                onChange={(e) => setResGuests(e.target.value)}
-                className="w-full px-3.5 py-3 text-xs border border-zinc-300 rounded-[2px] focus:outline-none focus:border-amber-500 bg-white cursor-pointer"
-              >
-                <option value="1 Person">1 Person</option>
-                <option value="2 Persons">2 Persons</option>
-                <option value="3 Persons">3 Persons</option>
-                <option value="4 Persons">4 Persons</option>
-                <option value="5+ Persons">5+ Persons Group</option>
-              </select>
-
-              <div className="relative">
-                <input
-                  type="date"
-                  value={resDate}
-                  onChange={(e) => setResDate(e.target.value)}
-                  className="w-full px-3.5 py-3 text-xs border border-zinc-300 rounded-[2px] focus:outline-none focus:border-amber-500 bg-white"
-                />
-              </div>
-
-              <select
-                value={resTime}
-                onChange={(e) => setResTime(e.target.value)}
-                className="w-full px-3.5 py-3 text-xs border border-zinc-300 rounded-[2px] focus:outline-none focus:border-amber-500 bg-white cursor-pointer"
-              >
-                <option value="12:00">12:00 PM</option>
-                <option value="13:00">01:00 PM</option>
-                <option value="18:00">06:00 PM</option>
-                <option value="19:00">07:00 PM</option>
-                <option value="20:00">08:00 PM</option>
-              </select>
-            </div>
-
-            {/* Submit Button */}
-            <div className="text-center pt-3">
-              <button
-                type="submit"
-                className="px-12 py-3 border-2 border-amber-500 text-amber-600 hover:bg-amber-500 hover:text-white font-bold text-xs tracking-widest uppercase transition rounded-[2px] cursor-pointer"
-              >
-                Reservation
-              </button>
-            </div>
-          </form>
-        </motion.div>
-      </section>
-
-      {/* 4. FLASH SALE VOUCHERS SHOWCASE WITH PARALLAX (Clean & Solid) */}
+      {/* 3. FLASH SALE VOUCHERS SHOWCASE WITH PARALLAX (Clean & Solid) */}
       <section 
         id="deals" 
         className="relative py-24 px-6 bg-fixed bg-center bg-cover border-y border-zinc-800"

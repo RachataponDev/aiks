@@ -93,7 +93,7 @@ export function PrivacyConsentModal() {
         {/* Modal Body */}
         <div className="p-6 space-y-5 text-xs text-zinc-300">
           <p className="leading-relaxed text-zinc-400 text-xs">
-            To provide real-time dining operations, accurate delivery radiuses, and seamless table reservation services, LXVII requests permission for device location and cookie storage.
+            To provide real-time dining operations, accurate delivery radiuses, and seamless culinary services, LXVII requests permission for device location and cookie storage.
           </p>
 
           {/* Section 1: Cookie Selection */}
