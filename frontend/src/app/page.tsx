@@ -28,7 +28,8 @@ import {
   Send,
   MessageSquare,
   Lock,
-  Navigation
+  Navigation,
+  Store
 } from 'lucide-react';
 import { toast } from 'sonner';
 import { PromotionSuggestion } from '@/types/dashboard';
@@ -109,11 +110,18 @@ export default function RestaurantLandingPage() {
           </Link>
 
           {/* Central Nav Links */}
-          <div className="hidden lg:flex items-center gap-7 text-[11px] font-extrabold tracking-widest uppercase">
+          <div className="hidden md:flex items-center gap-7 text-[11px] font-extrabold tracking-widest uppercase">
             <a href="#home" className="text-amber-400 hover:text-amber-300 transition flex items-center gap-1">
               HOME
             </a>
-            <a href="#deals" className="text-amber-300 hover:text-amber-200 transition font-black flex items-center gap-1">
+            <Link 
+              href="/store" 
+              className="text-amber-300 hover:text-amber-200 transition font-black flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400/15 border border-amber-400/40 shadow-xs"
+            >
+              <ShoppingBag className="w-3.5 h-3.5 text-amber-400" />
+              <span>STORE &amp; COUPONS</span>
+            </Link>
+            <a href="#deals" className="text-zinc-300 hover:text-amber-300 transition flex items-center gap-1">
               <Sparkles className="w-3 h-3 text-amber-400" />
               FLASH DEALS
             </a>
@@ -126,14 +134,15 @@ export default function RestaurantLandingPage() {
           </div>
 
           {/* Right Action Icons & Controls */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             
-            {/* View Store Button */}
+            {/* View Store Button (Visible on all screen sizes including mobile) */}
             <Link
               href="/store"
-              className="hidden sm:inline-flex items-center px-5 py-2.5 text-[11px] font-bold tracking-widest uppercase border border-amber-400/80 text-amber-300 hover:bg-amber-400 hover:text-zinc-950 transition rounded-[2px]"
+              className="inline-flex items-center gap-1.5 px-3.5 sm:px-5 py-2 text-[10px] sm:text-[11px] font-black tracking-wider uppercase bg-amber-400 hover:bg-amber-300 text-zinc-950 transition rounded-full shadow-md shadow-amber-400/20"
             >
-              EXPLORE STORE
+              <Store className="w-3.5 h-3.5" />
+              <span>STORE</span>
             </Link>
 
             {/* Search Icon */}
