@@ -1,0 +1,19 @@
+recipe_id,menu_item_id,menu_item_name,inventory_item_id,inventory_item_name,ingredient_quantity,ingredient_uom,unit_cost_thb,subtotal_cost_thb
+RCP001,CAF001,Thai Iced Tea,INV001,Tea leaves,0.025,kg,280,7.00
+RCP002,CAF001,Thai Iced Tea,INV002,Milk,0.080,litre,65,5.20
+RCP003,CAF002,Iced Americano,INV004,Coffee beans,0.020,kg,520,10.40
+RCP004,CAF003,Latte,INV004,Coffee beans,0.020,kg,520,10.40
+RCP005,CAF003,Latte,INV002,Milk,0.180,litre,65,11.70
+RCP006,CAF004,Butter Croissant,INV005,Croissant dough,1.000,piece,28,28.00
+RCP007,CAF005,Chicken Basil Rice,INV006,Chicken,0.200,kg,120,24.00
+RCP008,CAF005,Chicken Basil Rice,INV007,Basil,0.050,kg,45,2.25
+RCP009,CAF006,Mango Sticky Rice,INV008,Mango,0.250,kg,95,23.75
+RCP010,CAF006,Mango Sticky Rice,INV009,Sticky rice,0.150,kg,65,9.75
+RCP011,CAF006,Mango Sticky Rice,INV002,Milk,0.050,litre,65,3.25
+RCP012,CAF007,Bottled Water,INV010,Bottled water,1.000,bottle,8,8.00
+RCP013,CAF008,Soy Milk,INV003,Soy milk,1.000,carton,25,25.00
+RCP014,CAF010,Pandan Coconut Cake,INV014,Coconut cake,1.000,piece,24,24.00
+RCP015,HOS003,Breakfast Add-on,INV005,Croissant dough,1.000,piece,28,28.00
+RCP016,HOS003,Breakfast Add-on,INV002,Milk,0.200,litre,65,13.00
+RCP017,HOS003,Breakfast Add-on,INV008,Mango,0.150,kg,95,14.25
+RCP018,CAF009,Seasonal Fruit Bowl,INV008,Mango,0.250,kg,95,23.75

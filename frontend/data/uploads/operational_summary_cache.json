@@ -1,0 +1,151 @@
+{
+  "success": true,
+  "isCached": false,
+  "generatedAt": "2026-10-29T06:01:49.510Z",
+  "summaryStats": {
+    "totalWasteRiskThb": 45438,
+    "expiringSoonCount": 6,
+    "runningOutCount": 2,
+    "notEnoughCount": 3
+  },
+  "cards": {
+    "expiringSoon": [
+      {
+        "itemId": "INV001",
+        "itemName": "Tea leaves",
+        "unit": "kg",
+        "closingStock": 11,
+        "dailyUsage": 4,
+        "daysRemaining": 2.8,
+        "estimatedWasteLossThb": 7840,
+        "status": "EXPIRE_SOON",
+        "aiReason": "High historical waste and limited shelf life pose an immediate spoilage risk.",
+        "recommendedAction": "Feature tea-based daily specials to accelerate consumption before quality degrades."
+      },
+      {
+        "itemId": "INV002",
+        "itemName": "Milk",
+        "unit": "litre",
+        "closingStock": 43,
+        "dailyUsage": 10,
+        "daysRemaining": 4.3,
+        "estimatedWasteLossThb": 2600,
+        "status": "EXPIRE_SOON",
+        "aiReason": "Large volume of perishable dairy risks spoiling before daily usage clears the stock.",
+        "recommendedAction": "Bundle milk with coffee or pastry promotions to boost daily turnover."
+      },
+      {
+        "itemId": "INV005",
+        "itemName": "Croissant dough",
+        "unit": "piece",
+        "closingStock": 112,
+        "dailyUsage": 30,
+        "daysRemaining": 3.7,
+        "estimatedWasteLossThb": 2856,
+        "status": "EXPIRE_SOON",
+        "aiReason": "Significant stock combined with a history of high waste threatens major spoilage losses.",
+        "recommendedAction": "Run a morning bakery bundle promotion to rapidly clear excess inventory."
+      },
+      {
+        "itemId": "INV006",
+        "itemName": "Chicken",
+        "unit": "kg",
+        "closingStock": 16,
+        "dailyUsage": 6,
+        "daysRemaining": 2.7,
+        "estimatedWasteLossThb": 4560,
+        "status": "EXPIRE_SOON",
+        "aiReason": "Perishable protein with high historical waste requires strict monitoring to prevent spoilage.",
+        "recommendedAction": "Highlight chicken dishes on today's lunch and dinner menus."
+      },
+      {
+        "itemId": "INV008",
+        "itemName": "Mango",
+        "unit": "kg",
+        "closingStock": 14,
+        "dailyUsage": 4,
+        "daysRemaining": 3.5,
+        "estimatedWasteLossThb": 3325,
+        "status": "EXPIRE_SOON",
+        "aiReason": "Ripening fruit with high past waste will spoil quickly if not utilized immediately.",
+        "recommendedAction": "Promote mango sticky rice specials to accelerate usage."
+      },
+      {
+        "itemId": "INV014",
+        "itemName": "Coconut cake",
+        "unit": "piece",
+        "closingStock": 56,
+        "dailyUsage": 12,
+        "daysRemaining": 4.7,
+        "estimatedWasteLossThb": 1152,
+        "status": "EXPIRE_SOON",
+        "aiReason": "High closing stock and historical waste indicate a high risk of product spoilage.",
+        "recommendedAction": "Offer slice-and-drink dessert combos to clear stock quickly."
+      }
+    ],
+    "runningOut": [
+      {
+        "itemId": "INV003",
+        "itemName": "Soy milk",
+        "unit": "carton",
+        "closingStock": 13,
+        "dailyUsage": 8,
+        "daysRemaining": 1.6,
+        "estimatedWasteLossThb": 1150,
+        "status": "RUNNING_OUT",
+        "aiReason": "Critically low runway of less than two days threatens an imminent stockout.",
+        "recommendedAction": "Place an urgent replenishment order for soy milk today."
+      },
+      {
+        "itemId": "INV009",
+        "itemName": "Sticky rice",
+        "unit": "kg",
+        "closingStock": 7,
+        "dailyUsage": 3,
+        "daysRemaining": 2.3,
+        "estimatedWasteLossThb": 2405,
+        "status": "RUNNING_OUT",
+        "aiReason": "Stock level provides less than 2.5 days of operational coverage.",
+        "recommendedAction": "Restock sticky rice immediately to support mango dessert sales."
+      }
+    ],
+    "notEnough": [
+      {
+        "itemId": "INV004",
+        "itemName": "Coffee beans",
+        "unit": "kg",
+        "closingStock": 8,
+        "dailyUsage": 2.5,
+        "daysRemaining": 3.2,
+        "estimatedWasteLossThb": 18200,
+        "status": "NOT_ENOUGH",
+        "aiReason": "Tight buffer leaves the kitchen vulnerable to stockouts during demand spikes.",
+        "recommendedAction": "Reorder coffee beans now to maintain a safe operational buffer."
+      },
+      {
+        "itemId": "INV007",
+        "itemName": "Basil",
+        "unit": "kg",
+        "closingStock": 7,
+        "dailyUsage": 2,
+        "daysRemaining": 3.5,
+        "estimatedWasteLossThb": 1350,
+        "status": "NOT_ENOUGH",
+        "aiReason": "Low stock coverage leaves little room for error given the ingredient's perishability.",
+        "recommendedAction": "Order fresh basil delivery for the upcoming service cycle."
+      },
+      {
+        "itemId": "INV010",
+        "itemName": "Bottled water",
+        "unit": "bottle",
+        "closingStock": 186,
+        "dailyUsage": 70,
+        "daysRemaining": 2.7,
+        "estimatedWasteLossThb": 0,
+        "status": "NOT_ENOUGH",
+        "aiReason": "Current stock provides under three days of coverage for high-volume sales.",
+        "recommendedAction": "Schedule a regular beverage restock to avoid weekend shortages."
+      }
+    ]
+  }
+}

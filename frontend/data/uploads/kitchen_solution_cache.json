@@ -1,0 +1,143 @@
+{
+  "success": true,
+  "isCached": false,
+  "generatedAt": "2026-10-29T06:05:32.146Z",
+  "weatherToday": {
+    "condition": "Heavy Rain / Wet Season",
+    "temperature": "28°C",
+    "season": "RAINY Season",
+    "impactOnDineIn": "-35% Walk-in traffic drop; dine-in bakery sales sluggish.",
+    "impactOnDelivery": "+45% Spike in Delivery orders (GrabFood, LINE MAN, ShopeeFood).",
+    "syntheticDemandIndex": 0.74
+  },
+  "summary": {
+    "totalWasteRescueThb": 4090,
+    "totalRestockCostThb": 17225,
+    "promotionsCount": 3,
+    "reorderCount": 4
+  },
+  "clearancePromotions": [
+    {
+      "id": "PROMO-01",
+      "title": "Rainy Day Butter Croissant Flash Deal",
+      "targetedIngredient": "Croissant dough",
+      "menuItem": "Butter Croissant",
+      "channel": "Delivery Apps Flash Sale",
+      "timeWindow": "14:00 - 17:00",
+      "originalPriceThb": 55,
+      "promoPriceThb": 42,
+      "marginThb": 14,
+      "expectedUnitsCleared": 50,
+      "expectedWasteSavedThb": 1400,
+      "strategyRATIONALE": "Discounting the butter croissant slightly above recipe cost (28 THB) protects the operating margin while capturing high delivery demand during sluggish bakery walk-in hours.",
+      "weatherFactorNote": "Leverages the +45% spike in delivery orders to clear sensitive croissant dough before expiration caused by low dine-in foot traffic.",
+      "platforms": {
+        "grabFood": true,
+        "lineMan": true,
+        "shopeeFood": true,
+        "websiteStore": false
+      }
+    },
+    {
+      "id": "PROMO-02",
+      "title": "Stormy Weather Mango Sticky Rice Special",
+      "targetedIngredient": "Mango",
+      "menuItem": "Mango Sticky Rice",
+      "channel": "Digital Delivery Platform Bundle",
+      "timeWindow": "11:00 - 20:00",
+      "originalPriceThb": 95,
+      "promoPriceThb": 75,
+      "marginThb": 38,
+      "expectedUnitsCleared": 40,
+      "expectedWasteSavedThb": 1520,
+      "strategyRATIONALE": "Price is well above the total recipe cost of 37.25 THB, securing a solid 38 THB margin per unit while averting total loss from mango and sticky rice perishability.",
+      "weatherFactorNote": "Heavy rain severely impacts fresh dessert sales on-premise; pushing this via delivery apps captures comfort-food ordering habits.",
+      "platforms": {
+        "grabFood": true,
+        "lineMan": true,
+        "shopeeFood": true,
+        "websiteStore": true
+      }
+    },
+    {
+      "id": "PROMO-03",
+      "title": "Cozy Rainy Afternoon Latte & Milk Promo",
+      "targetedIngredient": "Milk",
+      "menuItem": "Latte",
+      "channel": "In-App Delivery Promotion",
+      "timeWindow": "13:00 - 18:00",
+      "originalPriceThb": 75,
+      "promoPriceThb": 59,
+      "marginThb": 25,
+      "expectedUnitsCleared": 60,
+      "expectedWasteSavedThb": 1170,
+      "strategyRATIONALE": "Clears surplus milk inventory by stimulating hot and iced coffee delivery orders, ensuring the promo price safely covers the 33.75 THB combined recipe cost for coffee beans and milk.",
+      "weatherFactorNote": "Capitalizes on customers staying indoors during heavy rain who seek warm or caffeinated comfort beverages delivered to their door.",
+      "platforms": {
+        "grabFood": true,
+        "lineMan": true,
+        "shopeeFood": true,
+        "websiteStore": true
+      }
+    }
+  ],
+  "procurementOrders": [
+    {
+      "itemId": "INV003",
+      "itemName": "Soy milk",
+      "unit": "carton",
+      "currentStock": 11,
+      "dailyUsage": 8,
+      "daysRemaining": 1.4,
+      "recommendedOrderQuantity": 45,
+      "unitCostThb": 25,
+      "estimatedOrderCostThb": 1125,
+      "supplierLeadTimeDays": 1,
+      "urgencyLevel": "IMMEDIATE_ORDER",
+      "reason": "Current stock provides less than 2 days of buffer; immediate replenishment is needed to support rising soy milk beverage delivery requests."
+    },
+    {
+      "itemId": "INV001",
+      "itemName": "Tea leaves",
+      "unit": "kg",
+      "currentStock": 8,
+      "dailyUsage": 4,
+      "daysRemaining": 2,
+      "recommendedOrderQuantity": 25,
+      "unitCostThb": 280,
+      "estimatedOrderCostThb": 7000,
+      "supplierLeadTimeDays": 1,
+      "urgencyLevel": "IMMEDIATE_ORDER",
+      "reason": "Stock levels are critically low relative to daily consumption, risking stock-outs for Thai Iced Tea during delivery surges."
+    },
+    {
+      "itemId": "INV009",
+      "itemName": "Sticky rice",
+      "unit": "kg",
+      "currentStock": 9,
+      "dailyUsage": 3,
+      "daysRemaining": 3,
+      "recommendedOrderQuantity": 20,
+      "unitCostThb": 65,
+      "estimatedOrderCostThb": 1300,
+      "supplierLeadTimeDays": 1,
+      "urgencyLevel": "IMMEDIATE_ORDER",
+      "reason": "Buffer falls below the required 4-7 day threshold; replenishment ensures continuous preparation of Mango Sticky Rice."
+    },
+    {
+      "itemId": "INV004",
+      "itemName": "Coffee beans",
+      "unit": "kg",
+      "currentStock": 5,
+      "dailyUsage": 2.5,
+      "daysRemaining": 2,
+      "recommendedOrderQuantity": 15,
+      "unitCostThb": 520,
+      "estimatedOrderCostThb": 7800,
+      "supplierLeadTimeDays": 1,
+      "urgencyLevel": "IMMEDIATE_ORDER",
+      "reason": "Essential high-velocity ingredient nearing depletion; urgent reorder required to maintain core cafe beverage menu items."
+    }
+  ],
+  "executiveStrategy": "Heavy rain conditions are reducing walk-in traffic by 35% while driving a 45% surge in delivery orders, necessitating aggressive digital promotions on GrabFood, LINE MAN, and ShopeeFood to clear perishable stock. Simultaneously, immediate procurement orders are triggered to rebuild essential inventory buffers for items approaching stock-out."
+}

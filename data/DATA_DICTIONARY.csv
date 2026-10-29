@@ -1,0 +1,88 @@
+file_name,field_name,data_type,description
+products_services.csv,product_service_id,varies,Stable ID for canonical product/service; primary key
+products_services.csv,canonical_name,varies,Canonical display name
+products_services.csv,business_category,varies,"Broad category such as F&B, Accommodation, Tours, Transport"
+products_services.csv,business_type,varies,Operating context or provider type
+products_services.csv,unit_type,varies,Unit sold or booked
+products_services.csv,list_price_thb,varies,Illustrative list price in Thai baht
+products_services.csv,unit_cost_thb,varies,Illustrative unit cost in Thai baht
+products_services.csv,inventory_tracked_flag,varies,Whether physical stock/consumables are relevant
+products_services.csv,capacity_limited_flag,varies,Whether capacity/availability is relevant
+products_services.csv,currency,varies,Currency code
+products_services.csv,resource_note,varies,Likely resource/capacity constraint
+sales_transactions.csv,transaction_line_id,varies,Unique transaction line ID
+sales_transactions.csv,transaction_date,varies,Date recorded
+sales_transactions.csv,order_id,varies,Order identifier; multiple lines may share it
+sales_transactions.csv,customer_id,varies,Synthetic customer ID; may be missing
+sales_transactions.csv,branch_or_location_id,varies,Synthetic location identifier
+sales_transactions.csv,product_service_id,varies,Canonical catalog key
+sales_transactions.csv,product_service_name_raw,varies,Raw product/service name; aliases may be inconsistent
+sales_transactions.csv,business_category_raw,varies,Recorded category
+sales_transactions.csv,business_type_raw,varies,Recorded business type
+sales_transactions.csv,quantity,varies,Number of units/guests/services
+sales_transactions.csv,unit_price_thb,varies,Unit price before discount
+sales_transactions.csv,discount_rate,varies,Discount proportion
+sales_transactions.csv,gross_sales_thb,varies,Quantity × unit price
+sales_transactions.csv,discount_amount_thb,varies,Gross sales × discount rate
+sales_transactions.csv,net_sales_thb,varies,"Gross sales less discount, before status adjustments"
+sales_transactions.csv,sales_channel,varies,Order channel
+sales_transactions.csv,customer_segment,varies,Synthetic segment; unknown is allowed
+sales_transactions.csv,currency,varies,Currency code
+sales_transactions.csv,transaction_status,varies,"Completed, refunded, or partially refunded"
+inventory_daily.csv,inventory_record_id,varies,Unique daily inventory record
+inventory_daily.csv,date,varies,Observation date
+inventory_daily.csv,inventory_item_id,varies,Join to inventory item dictionary
+inventory_daily.csv,inventory_item_name,varies,Recorded item name
+inventory_daily.csv,opening_stock,varies,Opening quantity
+inventory_daily.csv,stock_received,varies,Received quantity; sometimes missing
+inventory_daily.csv,stock_used,varies,Quantity used
+inventory_daily.csv,waste_quantity,varies,Recorded waste; sometimes missing
+inventory_daily.csv,closing_stock,varies,Recorded closing quantity; some rows intentionally disagree with the stock equation
+inventory_daily.csv,unit_of_measure,varies,Stock unit
+inventory_daily.csv,record_source,varies,Manual count or system estimate
+inventory_daily.csv,branch_or_location_id,varies,Synthetic location
+inventory_item_dictionary.csv,inventory_item_id,varies,Stable inventory item ID
+inventory_item_dictionary.csv,inventory_item_name,varies,Canonical inventory name
+inventory_item_dictionary.csv,inventory_category,varies,"Ingredient, packaged good, hotel supply, or retail good"
+inventory_item_dictionary.csv,unit_of_measure,varies,Stock unit
+inventory_item_dictionary.csv,unit_cost_thb,varies,Illustrative cost per unit
+inventory_item_dictionary.csv,typical_daily_usage,varies,Illustrative daily usage baseline
+inventory_item_dictionary.csv,perishable_flag,varies,"1 if perishable, otherwise 0"
+daily_context.csv,date,varies,Calendar join key
+daily_context.csv,day_of_week,varies,Day name
+daily_context.csv,weekend_flag,varies,1 for Saturday/Sunday
+daily_context.csv,public_holiday_flag,varies,Synthetic holiday/event indicator
+daily_context.csv,season,varies,Simplified seasonal label
+daily_context.csv,weather_condition,varies,Synthetic weather category
+daily_context.csv,promotion_active_flag,varies,1 if promotion active
+daily_context.csv,synthetic_demand_index,varies,"Generated teaching signal, not ground truth"
+bookings_operations.csv,booking_id,varies,Unique booking record
+bookings_operations.csv,booking_created_date,varies,Date booking was made
+bookings_operations.csv,service_date,varies,Date of service or stay
+bookings_operations.csv,product_service_id,varies,Bookable product/service ID
+bookings_operations.csv,product_service_name,varies,Canonical name at generation time
+bookings_operations.csv,branch_or_location_id,varies,Synthetic location
+bookings_operations.csv,units_or_guests,varies,"Units, guests, or participants booked"
+bookings_operations.csv,booking_status,varies,"Confirmed, completed, cancelled, no-show, or pending"
+bookings_operations.csv,lead_time_days,varies,Days from booking creation to service
+bookings_operations.csv,service_start_datetime,varies,Synthetic scheduled start
+bookings_operations.csv,service_end_datetime,varies,Synthetic scheduled end
+bookings_operations.csv,booking_channel,varies,Booking channel
+bookings_operations.csv,booking_value_thb,varies,Illustrative gross booking value before adjustments
+bookings_operations.csv,cancellation_policy,varies,Synthetic policy category
+customer_feedback.csv,feedback_id,varies,Unique feedback record
+customer_feedback.csv,feedback_date,varies,Feedback date
+customer_feedback.csv,branch_or_location_id,varies,Synthetic location
+customer_feedback.csv,business_category,varies,Hospitality category
+customer_feedback.csv,channel,varies,Feedback channel
+customer_feedback.csv,rating_1_to_5,varies,Rating; may be missing
+customer_feedback.csv,feedback_theme,varies,Generated theme label
+customer_feedback.csv,comment_text,varies,Synthetic comment; may be missing
+customer_feedback.csv,comment_language,varies,Synthetic language label
+data_quality_issue_register.csv,file_name,varies,File containing the issue
+data_quality_issue_register.csv,record_id,varies,Affected row ID
+data_quality_issue_register.csv,field_name,varies,Affected field
+data_quality_issue_register.csv,issue_type,varies,Issue category
+data_quality_issue_register.csv,observed_value,varies,Value found
+data_quality_issue_register.csv,reference_or_expected_value,varies,Canonical value or calculated reference
+data_quality_issue_register.csv,student_action_hint,varies,Suggested investigation direction

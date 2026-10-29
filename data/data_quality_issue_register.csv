@@ -1,0 +1,163 @@
+file_name,record_id,field_name,issue_type,observed_value,reference_or_expected_value,student_action_hint
+sales_transactions.csv,TXN00011,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Water bottle,Bottled Water,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00075,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Ice Americano,Iced Americano,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00092,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Mango sticky rice,Mango Sticky Rice,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00159,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Water bottle,Bottled Water,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00217,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Croissant - butter,Butter Croissant,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00241,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Soya Milk,Soy Milk,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00258,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Latte coffee,Latte,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00270,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Thai IcedTea,Thai Iced Tea,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00327,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Croissant - butter,Butter Croissant,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00518,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Mango sticky rice,Mango Sticky Rice,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00574,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Mango sticky rice,Mango Sticky Rice,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00594,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Soya Milk,Soy Milk,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00630,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Latte coffee,Latte,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00633,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Basil Chicken w Rice,Chicken Basil Rice,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00658,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Ice Americano,Iced Americano,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00663,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Thai ice tea,Thai Iced Tea,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00725,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Soya Milk,Soy Milk,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00759,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Croissant - butter,Butter Croissant,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00771,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Cafe Latte,Latte,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00817,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Basil Chicken w Rice,Chicken Basil Rice,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00850,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Soymilk,Soy Milk,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00851,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Old city walk tour,Old City Walking Tour,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00898,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Chicken basil rice,Chicken Basil Rice,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00983,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Old city walk tour,Old City Walking Tour,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00998,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Soya Milk,Soy Milk,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01087,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Latte coffee,Latte,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01093,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Ice Americano,Iced Americano,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01100,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Ice Americano,Iced Americano,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01137,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Croissant - butter,Butter Croissant,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01160,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Water bottle,Bottled Water,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01292,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Chicken basil rice,Chicken Basil Rice,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01324,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Thai ice tea,Thai Iced Tea,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01339,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Mango sticky rice,Mango Sticky Rice,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01357,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Thai ice tea,Thai Iced Tea,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01359,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Croissant - butter,Butter Croissant,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01360,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Soymilk,Soy Milk,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01399,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Ice Americano,Iced Americano,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01405,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Mango sticky rice,Mango Sticky Rice,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01427,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Chicken basil rice,Chicken Basil Rice,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01447,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Ice Americano,Iced Americano,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01483,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Thai IcedTea,Thai Iced Tea,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01517,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Cafe Latte,Latte,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01558,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Croissant - butter,Butter Croissant,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01568,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Mango sticky rice,Mango Sticky Rice,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01588,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Ice Americano,Iced Americano,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01599,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Basil Chicken w Rice,Chicken Basil Rice,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01731,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Soymilk,Soy Milk,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01739,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Mango sticky rice,Mango Sticky Rice,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01780,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Chicken basil rice,Chicken Basil Rice,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01806,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Croissant - butter,Butter Croissant,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01900,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Croissant - butter,Butter Croissant,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01902,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Croissant - butter,Butter Croissant,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01919,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Croissant - butter,Butter Croissant,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01942,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Soymilk,Soy Milk,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01947,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Mango sticky rice,Mango Sticky Rice,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01963,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Croissant - butter,Butter Croissant,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01986,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Thai ice tea,Thai Iced Tea,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN01991,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Soymilk,Soy Milk,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN02030,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Mango sticky rice,Mango Sticky Rice,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN02062,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Water bottle,Bottled Water,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN02079,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Ice Americano,Iced Americano,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN02147,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Mango sticky rice,Mango Sticky Rice,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN02204,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Soya Milk,Soy Milk,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN02237,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Latte coffee,Latte,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN02279,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Croissant - butter,Butter Croissant,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN02295,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Mango sticky rice,Mango Sticky Rice,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN02348,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Latte coffee,Latte,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN02377,product_service_name_raw,INCONSISTENT_PRODUCT_NAMING,Water bottle,Bottled Water,Map product_service_id to products_services.csv canonical_name; do not treat aliases as separate products.
+sales_transactions.csv,TXN00025,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00027,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00034,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00055,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00099,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00244,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00245,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00255,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00262,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00313,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00319,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00366,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00389,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00397,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00479,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00547,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00558,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00590,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00610,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00614,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00693,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00704,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00734,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00747,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00816,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00841,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00888,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00904,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00967,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN00984,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN01051,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN01093,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN01097,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN01099,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN01123,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN01129,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN01132,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN01186,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN01208,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN01234,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN01248,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN01286,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN01356,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN01360,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN01365,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN01427,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN01491,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN01613,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN01885,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN01949,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN01963,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN02020,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN02049,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN02069,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN02078,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN02082,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN02099,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN02172,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN02182,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN02271,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN02272,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN02290,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN02321,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+sales_transactions.csv,TXN02329,customer_id,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+inventory_daily.csv,INVROW02315,stock_received,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+inventory_daily.csv,INVROW01884,waste_quantity,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+inventory_daily.csv,INVROW02577,waste_quantity,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+customer_feedback.csv,FB0031,rating_1_to_5,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+customer_feedback.csv,FB0035,rating_1_to_5,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+customer_feedback.csv,FB0052,rating_1_to_5,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+customer_feedback.csv,FB0055,rating_1_to_5,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+customer_feedback.csv,FB0066,rating_1_to_5,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+customer_feedback.csv,FB0067,rating_1_to_5,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+customer_feedback.csv,FB0214,rating_1_to_5,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+customer_feedback.csv,FB0296,rating_1_to_5,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+customer_feedback.csv,FB0355,rating_1_to_5,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+customer_feedback.csv,FB0381,rating_1_to_5,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+customer_feedback.csv,FB0407,rating_1_to_5,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+customer_feedback.csv,FB0411,rating_1_to_5,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+customer_feedback.csv,FB0062,comment_text,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+customer_feedback.csv,FB0100,comment_text,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+customer_feedback.csv,FB0113,comment_text,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+customer_feedback.csv,FB0115,comment_text,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+customer_feedback.csv,FB0151,comment_text,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+customer_feedback.csv,FB0182,comment_text,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+customer_feedback.csv,FB0252,comment_text,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+customer_feedback.csv,FB0305,comment_text,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+customer_feedback.csv,FB0318,comment_text,MISSING_VALUE,,,Investigate whether the field can be inferred; otherwise retain as unknown and document the handling.
+inventory_daily.csv,INVROW00520,closing_stock,STOCK_BALANCE_DISCREPANCY,20,23,Check opening + received - used - waste = expected closing; investigate rather than blindly overwrite.
+inventory_daily.csv,INVROW00524,closing_stock,STOCK_BALANCE_DISCREPANCY,34,30,Check opening + received - used - waste = expected closing; investigate rather than blindly overwrite.
+inventory_daily.csv,INVROW01528,closing_stock,STOCK_BALANCE_DISCREPANCY,42,38,Check opening + received - used - waste = expected closing; investigate rather than blindly overwrite.
+inventory_daily.csv,INVROW01532,closing_stock,STOCK_BALANCE_DISCREPANCY,17,20,Check opening + received - used - waste = expected closing; investigate rather than blindly overwrite.
+inventory_daily.csv,INVROW03264,closing_stock,STOCK_BALANCE_DISCREPANCY,28,33,Check opening + received - used - waste = expected closing; investigate rather than blindly overwrite.
+inventory_daily.csv,INVROW03268,closing_stock,STOCK_BALANCE_DISCREPANCY,30,24,Check opening + received - used - waste = expected closing; investigate rather than blindly overwrite.

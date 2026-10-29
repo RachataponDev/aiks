@@ -1,0 +1,24 @@
+product_service_id,canonical_name,business_category,business_type,unit_type,list_price_thb,unit_cost_thb,inventory_tracked_flag,capacity_limited_flag,currency,resource_note
+CAF001,Thai Iced Tea,F&B,Cafe,drink,45,12,1,0,THB,Perishable ingredients
+CAF002,Iced Americano,F&B,Cafe,drink,60,15,1,0,THB,Perishable ingredients
+CAF003,Latte,F&B,Cafe,drink,75,22,1,0,THB,Perishable ingredients
+CAF004,Butter Croissant,F&B,Cafe,food,55,21,1,0,THB,Perishable ingredients
+CAF005,Chicken Basil Rice,F&B,Cafe,food,89,36,1,0,THB,Perishable ingredients
+CAF006,Mango Sticky Rice,F&B,Cafe,food,95,38,1,0,THB,Perishable ingredients
+CAF007,Bottled Water,F&B,Cafe,drink,20,6,1,0,THB,Packaged stock
+CAF008,Soy Milk,F&B,Cafe,drink,25,9,1,0,THB,Packaged stock
+HOS001,Standard Room - Night,Accommodation,Hotel,room_night,1450,620,0,1,THB,Room capacity
+HOS002,Deluxe Room - Night,Accommodation,Hotel,room_night,2200,950,0,1,THB,Room capacity
+HOS003,Breakfast Add-on,Accommodation,Hotel,add_on,180,65,1,0,THB,Food ingredients
+HOS004,Late Checkout,Accommodation,Hotel,add_on,300,40,0,0,THB,Service capacity
+TOU001,Old City Walking Tour,Tours,Tour operator,person_ticket,650,210,0,1,THB,Guide capacity
+TOU002,Floating Market Half-Day Tour,Tours,Tour operator,person_ticket,1250,520,0,1,THB,Guide and vehicle capacity
+TOU003,Temple & Culture Tour,Tours,Tour operator,person_ticket,900,340,0,1,THB,Guide capacity
+TOU005,Thai Massage 60 Minutes,Wellness,Spa / wellness,session,550,180,0,1,THB,Therapist capacity
+TRN001,Airport Transfer - Sedan,Transport,Travel operator,vehicle_trip,850,390,0,1,THB,Vehicle capacity
+TRN002,Airport Transfer - Van,Transport,Travel operator,vehicle_trip,1250,580,0,1,THB,Vehicle capacity
+TRN003,City Transfer - Sedan,Transport,Travel operator,vehicle_trip,450,210,0,1,THB,Vehicle capacity
+TRN004,Airport Transfer - Sedan (Night),Transport,Travel operator,vehicle_trip,1050,470,0,1,THB,Vehicle capacity
+CAF009,Seasonal Fruit Bowl,F&B,Cafe,food,70,28,1,0,THB,Perishable ingredients
+CAF010,Pandan Coconut Cake,F&B,Cafe,food,65,24,1,0,THB,Perishable ingredients
+TOU006,Sunset River Cruise,Tours,Tour operator,person_ticket,1450,640,0,1,THB,Boat capacity

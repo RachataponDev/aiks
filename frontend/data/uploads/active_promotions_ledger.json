@@ -1,0 +1,71 @@
+[
+  {
+    "id": "PROMO-01",
+    "title": "Rainy Day Butter Croissant Flash Deal",
+    "targetedIngredient": "Croissant dough",
+    "menuItem": "Butter Croissant",
+    "originalPriceThb": 55,
+    "promoPriceThb": 42,
+    "timeWindow": "14:00 - 17:00",
+    "channels": {
+      "grabFood": true,
+      "lineMan": true,
+      "shopeeFood": true,
+      "websiteStore": true
+    },
+    "isActive": true,
+    "createdAt": "2026-10-29T06:29:11.213Z",
+    "metrics": {
+      "redemptionCount": 0,
+      "totalRevenueThb": 0,
+      "unitsSold": 0
+    },
+    "description": "Discounting the butter croissant slightly above recipe cost (28 THB) protects the operating margin while capturing high delivery demand during sluggish bakery walk-in hours."
+  },
+  {
+    "id": "PROMO-02",
+    "title": "Stormy Weather Mango Sticky Rice Special",
+    "targetedIngredient": "Mango",
+    "menuItem": "Mango Sticky Rice",
+    "originalPriceThb": 95,
+    "promoPriceThb": 75,
+    "timeWindow": "11:00 - 20:00",
+    "channels": {
+      "grabFood": true,
+      "lineMan": true,
+      "shopeeFood": true,
+      "websiteStore": true
+    },
+    "isActive": true,
+    "createdAt": "2026-10-29T06:29:11.215Z",
+    "metrics": {
+      "redemptionCount": 0,
+      "totalRevenueThb": 0,
+      "unitsSold": 0
+    },
+    "description": "Price is well above the total recipe cost of 37.25 THB, securing a solid 38 THB margin per unit while averting total loss from mango and sticky rice perishability."
+  },
+  {
+    "id": "PROMO-03",
+    "title": "Cozy Rainy Afternoon Latte & Milk Promo",
+    "targetedIngredient": "Milk",
+    "menuItem": "Latte",
+    "originalPriceThb": 75,
+    "promoPriceThb": 59,
+    "timeWindow": "13:00 - 18:00",
+    "channels": {
+      "grabFood": true,
+      "lineMan": true,
+      "shopeeFood": true,
+      "websiteStore": true
+    },
+    "isActive": true,
+    "createdAt": "2026-10-29T06:29:11.215Z",
+    "metrics": {
+      "redemptionCount": 0,
+      "totalRevenueThb": 0,
+      "unitsSold": 0
+    },
+    "description": "Clears surplus milk inventory by stimulating hot and iced coffee delivery orders, ensuring the promo price safely covers the 33.75 THB combined recipe cost for coffee beans and milk."
+  }
+]

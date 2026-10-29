@@ -1,0 +1,222 @@
+{
+  "file_1793253672224_8mgfs": {
+    "fileId": "file_1793253672224_8mgfs",
+    "category": "dataset",
+    "originalName": "bookings_operations.csv",
+    "savedFileName": "bookings_operations_1793253672223_9nnk.csv",
+    "filePath": "/Applications/MAMP/htdocs/aiks/frontend/data/uploads/bookings_operations_1793253672223_9nnk.csv",
+    "fileSizeBytes": 89421,
+    "uploadedAt": "2026-10-29T06:01:12.224Z",
+    "sampleColumns": [
+      "booking_id",
+      "booking_created_date",
+      "service_date",
+      "product_service_id",
+      "product_service_name",
+      "branch_or_location_id",
+      "units_or_guests",
+      "booking_status",
+      "lead_time_days",
+      "service_start_datetime",
+      "service_end_datetime",
+      "booking_channel",
+      "booking_value_thb",
+      "cancellation_policy"
+    ],
+    "rowCount": 608
+  },
+  "file_1793253672225_vfkfr": {
+    "fileId": "file_1793253672225_vfkfr",
+    "category": "dataset",
+    "originalName": "customer_feedback.csv",
+    "savedFileName": "customer_feedback_1793253672225_fmjj.csv",
+    "filePath": "/Applications/MAMP/htdocs/aiks/frontend/data/uploads/customer_feedback_1793253672225_fmjj.csv",
+    "fileSizeBytes": 30414,
+    "uploadedAt": "2026-10-29T06:01:12.225Z",
+    "sampleColumns": [
+      "feedback_id",
+      "feedback_date",
+      "branch_or_location_id",
+      "business_category",
+      "channel",
+      "rating_1_to_5",
+      "feedback_theme",
+      "comment_text",
+      "comment_language"
+    ],
+    "rowCount": 262
+  },
+  "file_1793253672226_gzj1g": {
+    "fileId": "file_1793253672226_gzj1g",
+    "category": "dataset",
+    "originalName": "daily_context.csv",
+    "savedFileName": "daily_context_1793253672225_0ay8.csv",
+    "filePath": "/Applications/MAMP/htdocs/aiks/frontend/data/uploads/daily_context_1793253672225_0ay8.csv",
+    "fileSizeBytes": 15843,
+    "uploadedAt": "2026-10-29T06:01:12.226Z",
+    "sampleColumns": [
+      "date",
+      "day_of_week",
+      "weekend_flag",
+      "public_holiday_flag",
+      "season",
+      "weather_condition",
+      "promotion_active_flag",
+      "synthetic_demand_index"
+    ],
+    "rowCount": 365
+  },
+  "file_1793253672226_dgu9u": {
+    "fileId": "file_1793253672226_dgu9u",
+    "category": "dataset",
+    "originalName": "DATA_DICTIONARY.csv",
+    "savedFileName": "DATA_DICTIONARY_1793253672226_lyoi.csv",
+    "filePath": "/Applications/MAMP/htdocs/aiks/frontend/data/uploads/DATA_DICTIONARY_1793253672226_lyoi.csv",
+    "fileSizeBytes": 6603,
+    "uploadedAt": "2026-10-29T06:01:12.226Z",
+    "sampleColumns": [
+      "file_name",
+      "field_name",
+      "data_type",
+      "description"
+    ],
+    "rowCount": 87
+  },
+  "file_1793253672227_kfmyg": {
+    "fileId": "file_1793253672227_kfmyg",
+    "category": "dataset",
+    "originalName": "data_quality_issue_register.csv",
+    "savedFileName": "data_quality_issue_register_1793253672227_g6d6.csv",
+    "filePath": "/Applications/MAMP/htdocs/aiks/frontend/data/uploads/data_quality_issue_register_1793253672227_g6d6.csv",
+    "fileSizeBytes": 30502,
+    "uploadedAt": "2026-10-29T06:01:12.227Z",
+    "sampleColumns": [
+      "file_name",
+      "record_id",
+      "field_name",
+      "issue_type",
+      "observed_value",
+      "reference_or_expected_value",
+      "student_action_hint"
+    ],
+    "rowCount": 162
+  },
+  "file_1793253672229_m30zo": {
+    "fileId": "file_1793253672229_m30zo",
+    "category": "dataset",
+    "originalName": "inventory_daily.csv",
+    "savedFileName": "inventory_daily_1793253672228_xpw9.csv",
+    "filePath": "/Applications/MAMP/htdocs/aiks/frontend/data/uploads/inventory_daily_1793253672228_xpw9.csv",
+    "fileSizeBytes": 386577,
+    "uploadedAt": "2026-10-29T06:01:12.229Z",
+    "sampleColumns": [
+      "inventory_record_id",
+      "date",
+      "inventory_item_id",
+      "inventory_item_name",
+      "opening_stock",
+      "stock_received",
+      "stock_used",
+      "waste_quantity",
+      "closing_stock",
+      "unit_of_measure",
+      "record_source",
+      "branch_or_location_id"
+    ],
+    "rowCount": 4380
+  },
+  "file_1793253672229_zvgsa": {
+    "fileId": "file_1793253672229_zvgsa",
+    "category": "dataset",
+    "originalName": "inventory_item_dictionary.csv",
+    "savedFileName": "inventory_item_dictionary_1793253672229_x46k.csv",
+    "filePath": "/Applications/MAMP/htdocs/aiks/frontend/data/uploads/inventory_item_dictionary_1793253672229_x46k.csv",
+    "fileSizeBytes": 639,
+    "uploadedAt": "2026-10-29T06:01:12.229Z",
+    "sampleColumns": [
+      "inventory_item_id",
+      "inventory_item_name",
+      "inventory_category",
+      "unit_of_measure",
+      "unit_cost_thb",
+      "typical_daily_usage",
+      "perishable_flag"
+    ],
+    "rowCount": 12
+  },
+  "file_1793253672229_38zvu": {
+    "fileId": "file_1793253672229_38zvu",
+    "category": "dataset",
+    "originalName": "products_services.csv",
+    "savedFileName": "products_services_1793253672229_xwr8.csv",
+    "filePath": "/Applications/MAMP/htdocs/aiks/frontend/data/uploads/products_services_1793253672229_xwr8.csv",
+    "fileSizeBytes": 2149,
+    "uploadedAt": "2026-10-29T06:01:12.229Z",
+    "sampleColumns": [
+      "product_service_id",
+      "canonical_name",
+      "business_category",
+      "business_type",
+      "unit_type",
+      "list_price_thb",
+      "unit_cost_thb",
+      "inventory_tracked_flag",
+      "capacity_limited_flag",
+      "currency",
+      "resource_note"
+    ],
+    "rowCount": 23
+  },
+  "file_1793253672230_ln542": {
+    "fileId": "file_1793253672230_ln542",
+    "category": "dataset",
+    "originalName": "recipes_bom.csv",
+    "savedFileName": "recipes_bom_1793253672229_bdue.csv",
+    "filePath": "/Applications/MAMP/htdocs/aiks/frontend/data/uploads/recipes_bom_1793253672229_bdue.csv",
+    "fileSizeBytes": 1318,
+    "uploadedAt": "2026-10-29T06:01:12.230Z",
+    "sampleColumns": [
+      "recipe_id",
+      "menu_item_id",
+      "menu_item_name",
+      "inventory_item_id",
+      "inventory_item_name",
+      "ingredient_quantity",
+      "ingredient_uom",
+      "unit_cost_thb",
+      "subtotal_cost_thb"
+    ],
+    "rowCount": 18
+  },
+  "file_1793253672231_8ep8u": {
+    "fileId": "file_1793253672231_8ep8u",
+    "category": "dataset",
+    "originalName": "sales_transactions.csv",
+    "savedFileName": "sales_transactions_1793253672231_9sf6.csv",
+    "filePath": "/Applications/MAMP/htdocs/aiks/frontend/data/uploads/sales_transactions_1793253672231_9sf6.csv",
+    "fileSizeBytes": 322426,
+    "uploadedAt": "2026-10-29T06:01:12.231Z",
+    "sampleColumns": [
+      "transaction_line_id",
+      "transaction_date",
+      "order_id",
+      "customer_id",
+      "branch_or_location_id",
+      "product_service_id",
+      "product_service_name_raw",
+      "business_category_raw",
+      "business_type_raw",
+      "quantity",
+      "unit_price_thb",
+      "discount_rate",
+      "gross_sales_thb",
+      "discount_amount_thb",
+      "net_sales_thb",
+      "sales_channel",
+      "customer_segment",
+      "currency",
+      "transaction_status"
+    ],
+    "rowCount": 2145
+  }
+}
