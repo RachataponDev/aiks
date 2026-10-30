@@ -230,7 +230,7 @@ export default function RestaurantLandingPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.35, duration: 0.8 }}
-              className="font-serif text-5xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight leading-none mb-8"
+              className="font-serif text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight leading-tight sm:leading-none mb-6 sm:mb-8"
             >
               Specialty Of Foods
             </motion.h1>
@@ -239,17 +239,17 @@ export default function RestaurantLandingPage() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.5, duration: 0.5 }}
-              className="flex items-center justify-center gap-4"
+              className="flex flex-col sm:flex-row items-stretch sm:items-center justify-start gap-3 sm:gap-4"
             >
               <Link
                 href="/store"
-                className="inline-block px-8 py-3.5 bg-amber-400 text-zinc-950 hover:bg-amber-300 font-extrabold text-xs tracking-widest uppercase transition rounded-[2px] shadow-lg shadow-amber-400/20"
+                className="inline-block text-center px-6 sm:px-8 py-3.5 bg-amber-400 text-zinc-950 hover:bg-amber-300 font-extrabold text-xs tracking-widest uppercase transition rounded-[2px] shadow-lg shadow-amber-400/20"
               >
                 Claim Flash Deals
               </Link>
               <a
                 href="#about"
-                className="inline-block px-8 py-3.5 border-2 border-white/40 text-white hover:border-amber-400 hover:text-amber-300 font-bold text-xs tracking-widest uppercase transition rounded-[2px]"
+                className="inline-block text-center px-6 sm:px-8 py-3.5 border-2 border-white/40 text-white hover:border-amber-400 hover:text-amber-300 font-bold text-xs tracking-widest uppercase transition rounded-[2px]"
               >
                 Learn More
               </a>

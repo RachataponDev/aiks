@@ -35,23 +35,23 @@ export default function SignInPage() {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1f1f23_1px,transparent_1px),linear-gradient(to_bottom,#1f1f23_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-20 pointer-events-none" />
 
       {/* Top Bar Navigation */}
-      <header className="relative z-10 max-w-7xl mx-auto w-full px-6 py-6 flex items-center justify-between">
+      <header className="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 py-4 sm:py-6 flex items-center justify-between">
         <Link 
           href="/" 
-          className="inline-flex items-center gap-2 text-xs font-mono text-zinc-400 hover:text-amber-400 transition"
+          className="inline-flex items-center gap-1.5 text-xs font-mono text-zinc-400 hover:text-amber-400 transition"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Restaurant
+          <span className="hidden xs:inline">Back to Restaurant</span>
+          <span className="xs:hidden">Back</span>
         </Link>
 
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-2xl font-serif font-black tracking-wider text-white">
+          <span className="text-xl sm:text-2xl font-serif font-black tracking-wider text-white">
             <span className="text-amber-400">LXVII</span>
           </span>
         </Link>
 
-        <div className="text-xs text-zinc-400">
-          Need an account?{' '}
+        <div className="text-[11px] sm:text-xs text-zinc-400">
           <Link href="/signup" className="text-amber-400 hover:text-amber-300 font-bold transition">
             Sign Up
           </Link>
@@ -59,7 +59,7 @@ export default function SignInPage() {
       </header>
 
       {/* Main Content Form Card */}
-      <main className="relative z-10 flex-1 flex items-center justify-center px-4 py-8">
+      <main className="relative z-10 flex-1 flex items-center justify-center px-3 sm:px-4 py-6 sm:py-8">
         <motion.div 
           initial={{ opacity: 0, scale: 0.96, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -67,7 +67,7 @@ export default function SignInPage() {
           className="w-full max-w-md"
         >
           
-          <div className="bg-[#18181c] border border-zinc-800 rounded-xl p-8 relative overflow-hidden">
+          <div className="bg-[#18181c] border border-zinc-800 rounded-xl p-5 sm:p-8 relative overflow-hidden">
             {/* Top Amber Border Accent */}
             <div className="absolute top-0 inset-x-0 h-1 bg-amber-500" />
 

@@ -214,24 +214,24 @@ export default function PromotionsGeneratorPage() {
               </p>
             </div>
 
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3">
               <Link
                 href="/dashboard/overview"
-                className="px-4 py-2 rounded-xl border border-zinc-200 bg-white hover:bg-zinc-100 text-xs font-bold text-zinc-700 transition"
+                className="px-3.5 sm:px-4 py-2 rounded-xl border border-zinc-200 bg-white hover:bg-zinc-100 text-xs font-bold text-zinc-700 transition"
               >
                 ← Overview
               </Link>
               <Link
                 href="/dashboard/promotions/manage"
-                className="px-4 py-2 rounded-xl border border-blue-200 bg-blue-50 hover:bg-blue-100 text-xs font-bold text-blue-700 transition flex items-center gap-1.5"
+                className="px-3.5 sm:px-4 py-2 rounded-xl border border-blue-200 bg-blue-50 hover:bg-blue-100 text-xs font-bold text-blue-700 transition flex items-center gap-1.5"
               >
                 <Settings className="w-3.5 h-3.5" />
-                <span>Promotion Manager</span>
+                <span>Manager</span>
               </Link>
               <button
                 onClick={() => fetchPromotions(true)}
                 disabled={loading || refreshing}
-                className="px-4 py-2 rounded-xl bg-zinc-950 hover:bg-zinc-800 text-white text-xs font-bold transition flex items-center gap-2 cursor-pointer shadow-sm active:scale-98 disabled:opacity-50"
+                className="px-3.5 sm:px-4 py-2 rounded-xl bg-zinc-950 hover:bg-zinc-800 text-white text-xs font-bold transition flex items-center gap-1.5 sm:gap-2 cursor-pointer shadow-sm active:scale-98 disabled:opacity-50"
               >
                 <RefreshCw className={`w-3.5 h-3.5 ${refreshing ? 'animate-spin' : ''}`} />
                 <span>{refreshing ? 'Analyzing...' : 'Recalculate'}</span>

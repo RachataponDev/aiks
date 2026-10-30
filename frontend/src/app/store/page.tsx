@@ -194,19 +194,20 @@ export default function StorePage() {
     <div className="min-h-screen bg-[#faf7f2] text-zinc-900 pb-20">
       {/* Top Navbar */}
       <nav className="absolute top-0 inset-x-0 z-20">
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between text-white">
-          <div className="flex items-center gap-2">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between text-white">
+          <Link href="/" className="flex items-center gap-1.5 shrink-0">
             <Store className="w-5 h-5 text-amber-400" />
             <span className="font-black tracking-tight text-xl font-serif">LXVII</span>
-          </div>
-          <div className="flex items-center gap-4 text-sm">
+          </Link>
+          <div className="flex items-center gap-2 sm:gap-4 text-xs sm:text-sm">
             <a href="#deals" className="hidden sm:inline hover:text-amber-300 transition">Flash Deals</a>
             <a href="#menu" className="hidden sm:inline hover:text-amber-300 transition">Menu</a>
             <Link 
               href="/dashboard/promotions/manage" 
-              className="flex items-center gap-1.5 text-xs font-semibold px-3.5 py-2 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur border border-white/20 transition cursor-pointer"
+              className="flex items-center gap-1 text-[11px] sm:text-xs font-semibold px-2.5 sm:px-3.5 py-1.5 sm:py-2 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur border border-white/20 transition cursor-pointer"
             >
-              <ArrowLeft className="w-3.5 h-3.5" /> Back-Office Settings
+              <ArrowLeft className="w-3.5 h-3.5 shrink-0" />
+              <span className="truncate max-w-[120px] sm:max-w-none">Back-Office</span>
             </Link>
           </div>
         </div>
@@ -246,23 +247,23 @@ export default function StorePage() {
       </header>
 
       {/* Flash Deals Section (Streamlined to Essential Elements Only) */}
-      <section id="deals" className="max-w-6xl mx-auto px-6 py-14">
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+      <section id="deals" className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-14">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 sm:gap-4 mb-6 sm:mb-8">
           <div>
-            <div className="flex items-center gap-2 mb-1">
-              <span className="text-xs font-black uppercase tracking-wider text-rose-600 bg-rose-50 border border-rose-200 px-2.5 py-0.5 rounded-full">
+            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-1">
+              <span className="text-[10px] sm:text-xs font-black uppercase tracking-wider text-rose-600 bg-rose-50 border border-rose-200 px-2 sm:px-2.5 py-0.5 rounded-full">
                 TODAY ONLY
               </span>
-              <span className="text-xs font-medium text-zinc-500">
-                Menu • Discount % • Remaining Hours • Inventory Limit
+              <span className="text-[11px] sm:text-xs font-medium text-zinc-500">
+                Menu • Discount % • Remaining Hours
               </span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-zinc-900">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-black tracking-tight text-zinc-900">
               Active Flash Coupons
             </h2>
           </div>
-          <span className="flex items-center gap-1.5 font-mono text-xs sm:text-sm font-bold bg-zinc-900 text-amber-400 px-3.5 py-2 rounded-full shadow-sm w-fit">
-            <Clock className="w-4 h-4 text-amber-400 animate-spin" style={{ animationDuration: '6s' }} /> Window: {countdown} left
+          <span className="flex items-center gap-1.5 font-mono text-xs sm:text-sm font-bold bg-zinc-900 text-amber-400 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-full shadow-sm w-fit">
+            <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-400 animate-spin" style={{ animationDuration: '6s' }} /> Window: {countdown} left
           </span>
         </div>
 

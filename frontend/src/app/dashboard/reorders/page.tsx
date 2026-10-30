@@ -296,12 +296,12 @@ export default function ProcurementOrdersPage() {
       <div className="flex-1 flex flex-col min-w-0">
         <DashboardNavbar />
 
-        <main className="flex-1 p-4 sm:p-6 md:p-10 max-w-6xl w-full mx-auto space-y-6 sm:space-y-8">
+        <main className="flex-1 p-3.5 sm:p-6 md:p-10 max-w-6xl w-full mx-auto space-y-5 sm:space-y-8">
           
           {/* Header & Controls */}
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-2 border-b border-zinc-200/60">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 pb-2 border-b border-zinc-200/60">
             <div>
-              <div className="flex items-center gap-2 mb-1">
+              <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-1">
                 <span className="px-2.5 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold bg-blue-100 text-blue-800 tracking-wide uppercase flex items-center gap-1.5">
                   <Truck className="w-3.5 h-3.5 text-blue-600" />
                   Procurement Operations
@@ -322,14 +322,14 @@ export default function ProcurementOrdersPage() {
             <div className="flex flex-wrap items-center gap-2 sm:gap-3 shrink-0">
               <Link
                 href="/dashboard/overview"
-                className="px-4 py-2.5 rounded-2xl border border-zinc-200 bg-white hover:bg-zinc-50 text-xs font-bold text-zinc-700 transition shadow-xs"
+                className="px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-2xl border border-zinc-200 bg-white hover:bg-zinc-50 text-xs font-bold text-zinc-700 transition shadow-xs"
               >
                 ← Overview
               </Link>
               <button
                 onClick={() => fetchOrders(true)}
                 disabled={loading || refreshing}
-                className="px-5 py-2.5 rounded-2xl bg-zinc-950 hover:bg-zinc-800 text-white text-xs font-bold transition flex items-center gap-2 cursor-pointer shadow-sm active:scale-97 disabled:opacity-50"
+                className="px-4 sm:px-5 py-2 sm:py-2.5 rounded-2xl bg-zinc-950 hover:bg-zinc-800 text-white text-xs font-bold transition flex items-center gap-1.5 sm:gap-2 cursor-pointer shadow-sm active:scale-97 disabled:opacity-50"
               >
                 <RefreshCw className={`w-3.5 h-3.5 ${refreshing ? 'animate-spin' : ''}`} />
                 <span>{refreshing ? 'Calculating...' : 'Recalculate Units'}</span>
@@ -452,14 +452,14 @@ export default function ProcurementOrdersPage() {
                     </div>
 
                     {/* Order Qty Box */}
-                    <div className="bg-zinc-50/80 p-4 rounded-2xl border border-zinc-200 text-right shrink-0 min-w-48 flex md:flex-col justify-between items-end">
+                    <div className="bg-zinc-50/80 p-3 sm:p-4 rounded-2xl border border-zinc-200 text-left sm:text-right shrink-0 w-full sm:w-auto sm:min-w-48 flex sm:flex-col justify-between items-center sm:items-end">
                       <span className="text-[10px] font-mono font-bold uppercase text-zinc-400 block">
                         Recommended Order
                       </span>
-                      <div className="text-2xl font-black text-cyan-700 font-mono my-0.5">
-                        +{order.recommendedOrderQuantity} <span className="text-sm font-semibold">{order.unit}</span>
+                      <div className="text-xl sm:text-2xl font-black text-cyan-700 font-mono my-0.5">
+                        +{order.recommendedOrderQuantity} <span className="text-xs sm:text-sm font-semibold">{order.unit}</span>
                       </div>
-                      <span className="text-xs text-zinc-500 font-medium font-mono block">
+                      <span className="text-[11px] sm:text-xs text-zinc-500 font-medium font-mono block">
                         THB {order.estimatedOrderCostThb.toLocaleString()} (@ THB {order.unitCostThb}/{order.unit})
                       </span>
                     </div>

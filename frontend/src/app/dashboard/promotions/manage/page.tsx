@@ -172,22 +172,22 @@ export default function PromotionManagerPage() {
               </p>
             </div>
 
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3">
               <Link
                 href="/dashboard/promotions"
-                className="px-4 py-2 rounded-xl border border-zinc-200 bg-white hover:bg-zinc-100 text-xs font-bold text-zinc-700 transition flex items-center gap-1.5"
+                className="px-3.5 sm:px-4 py-2 rounded-xl border border-zinc-200 bg-white hover:bg-zinc-100 text-xs font-bold text-zinc-700 transition flex items-center gap-1.5"
               >
                 <ArrowLeft className="w-3.5 h-3.5" />
-                <span>Calculate New Deals</span>
+                <span>Calculate</span>
               </Link>
 
               <Link
                 href="/store"
                 target="_blank"
-                className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold transition flex items-center gap-1.5 shadow-sm"
+                className="px-3.5 sm:px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold transition flex items-center gap-1.5 shadow-sm"
               >
                 <Store className="w-3.5 h-3.5" />
-                <span>View Live Storefront</span>
+                <span>Store</span>
                 <ExternalLink className="w-3 h-3" />
               </Link>
 
