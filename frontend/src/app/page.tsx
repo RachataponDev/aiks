@@ -29,7 +29,9 @@ import {
   MessageSquare,
   Lock,
   Navigation,
-  Store
+  Store,
+  Menu as MenuIcon,
+  X as CloseIcon
 } from 'lucide-react';
 import { toast } from 'sonner';
 import { PromotionSuggestion } from '@/types/dashboard';
@@ -42,6 +44,7 @@ export default function RestaurantLandingPage() {
   const [isMemberLoggedIn, setIsMemberLoggedIn] = useState(false);
   const [memberEmail, setMemberEmail] = useState('');
   const [claimedPromos, setClaimedPromos] = useState<string[]>([]);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Load active promotions from API (or fallback if empty)
   useEffect(() => {
@@ -97,20 +100,20 @@ export default function RestaurantLandingPage() {
   return (
     <div className="min-h-screen bg-white text-zinc-800 font-sans">
       
-      {/* 1. TOP NAVIGATION BAR (Exact match to template header) */}
+      {/* 1. TOP NAVIGATION BAR */}
       <nav className="fixed top-0 inset-x-0 z-40 bg-[#141414]/95 backdrop-blur-md border-b border-white/10 text-white transition-all duration-300">
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
           
           {/* Brand Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <span className="text-2xl font-serif font-black tracking-wider text-white group-hover:text-amber-400 transition">
+          <Link href="/" className="flex items-center gap-1.5 sm:gap-2 group shrink-0">
+            <span className="text-xl sm:text-2xl font-serif font-black tracking-wider text-white group-hover:text-amber-400 transition">
               <span className="text-amber-400">LXVII</span>
             </span>
-            <span className="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-amber-400 mb-1" />
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-amber-400 mb-0.5 sm:mb-1" />
           </Link>
 
-          {/* Central Nav Links */}
-          <div className="hidden md:flex items-center gap-7 text-[11px] font-extrabold tracking-widest uppercase">
+          {/* Central Nav Links (Desktop) */}
+          <div className="hidden lg:flex items-center gap-6 xl:gap-7 text-[11px] font-extrabold tracking-widest uppercase">
             <a href="#home" className="text-amber-400 hover:text-amber-300 transition flex items-center gap-1">
               HOME
             </a>
@@ -134,31 +137,31 @@ export default function RestaurantLandingPage() {
           </div>
 
           {/* Right Action Icons & Controls */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1.5 sm:gap-3">
             
-            {/* View Store Button (Visible on all screen sizes including mobile) */}
+            {/* View Store Button */}
             <Link
               href="/store"
-              className="inline-flex items-center gap-1.5 px-3.5 sm:px-5 py-2 text-[10px] sm:text-[11px] font-black tracking-wider uppercase bg-amber-400 hover:bg-amber-300 text-zinc-950 transition rounded-full shadow-md shadow-amber-400/20"
+              className="inline-flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-4 py-1.5 sm:py-2 text-[10px] sm:text-[11px] font-black tracking-wider uppercase bg-amber-400 hover:bg-amber-300 text-zinc-950 transition rounded-full shadow-md shadow-amber-400/20"
             >
-              <Store className="w-3.5 h-3.5" />
+              <Store className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
               <span>STORE</span>
             </Link>
 
             {/* Search Icon */}
             <button 
               onClick={() => toast.info('Type to search restaurant courses and specials...')}
-              className="text-zinc-300 hover:text-amber-400 p-1.5 transition cursor-pointer"
+              className="hidden sm:inline-flex text-zinc-300 hover:text-amber-400 p-1.5 transition cursor-pointer"
               title="Search menu"
             >
               <Search className="w-4 h-4" />
             </button>
 
-            {/* AUTH / MEMBER BUTTONS */}
-            <div className="flex items-center gap-2 border-l border-zinc-700/80 pl-3">
+            {/* AUTH / MEMBER BUTTONS (Desktop) */}
+            <div className="hidden sm:flex items-center gap-2 border-l border-zinc-700/80 pl-3">
               {isMemberLoggedIn ? (
                 <div className="flex items-center gap-2">
-                  <span className="hidden sm:inline-block text-[11px] font-mono text-amber-400 bg-amber-500/10 border border-amber-500/30 px-2 py-0.5 rounded-[2px]">
+                  <span className="text-[11px] font-mono text-amber-400 bg-amber-500/10 border border-amber-500/30 px-2 py-0.5 rounded-[2px]">
                     Member: {memberEmail.split('@')[0]}
                   </span>
                   <button
@@ -194,13 +197,119 @@ export default function RestaurantLandingPage() {
             {/* Direct Dashboard Link */}
             <Link
               href="/dashboard"
-              className="w-8 h-8 rounded-[2px] bg-white hover:bg-amber-400 text-zinc-900 transition flex items-center justify-center shadow-md cursor-pointer ml-1"
+              className="w-7 h-7 sm:w-8 sm:h-8 rounded-[2px] bg-white hover:bg-amber-400 text-zinc-900 transition flex items-center justify-center shadow-md cursor-pointer ml-0.5 sm:ml-1"
               title="Merchant Decision Intelligence Dashboard"
             >
-              <Settings className="w-4 h-4" />
+              <Settings className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
             </Link>
+
+            {/* Mobile Hamburger Toggle Button */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="lg:hidden p-1.5 text-zinc-300 hover:text-amber-400 transition cursor-pointer rounded ml-1"
+              aria-label="Toggle navigation menu"
+            >
+              {mobileMenuOpen ? (
+                <CloseIcon className="w-5 h-5 text-amber-400" />
+              ) : (
+                <MenuIcon className="w-5 h-5" />
+              )}
+            </button>
           </div>
         </div>
+
+        {/* Mobile Dropdown Menu Drawer */}
+        {mobileMenuOpen && (
+          <div className="lg:hidden bg-[#141414]/98 border-t border-white/10 px-5 py-4 space-y-3 transition-all duration-200 shadow-2xl">
+            <div className="flex flex-col space-y-2 text-xs font-extrabold tracking-widest uppercase">
+              <a 
+                href="#home" 
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-amber-400 hover:text-amber-300 py-2 border-b border-white/5 flex items-center justify-between"
+              >
+                <span>HOME</span>
+                <span className="text-zinc-600">→</span>
+              </a>
+              <Link 
+                href="/store" 
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-amber-300 hover:text-amber-200 py-2 border-b border-white/5 flex items-center justify-between"
+              >
+                <span className="flex items-center gap-2">
+                  <ShoppingBag className="w-4 h-4 text-amber-400" />
+                  STORE &amp; COUPONS
+                </span>
+                <span className="text-[10px] bg-amber-400 text-zinc-950 px-2 py-0.5 rounded font-black">HOT</span>
+              </Link>
+              <a 
+                href="#deals" 
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-zinc-300 hover:text-amber-300 py-2 border-b border-white/5 flex items-center justify-between"
+              >
+                <span className="flex items-center gap-2">
+                  <Sparkles className="w-4 h-4 text-amber-400" />
+                  FLASH DEALS
+                </span>
+                <span className="text-zinc-600">→</span>
+              </a>
+              <a 
+                href="#about" 
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-zinc-300 hover:text-amber-400 py-2 border-b border-white/5 flex items-center justify-between"
+              >
+                <span>ABOUT US</span>
+                <span className="text-zinc-600">→</span>
+              </a>
+              <a 
+                href="#contact" 
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-zinc-300 hover:text-amber-400 py-2 border-b border-white/5 flex items-center justify-between"
+              >
+                <span>CONTACT US</span>
+                <span className="text-zinc-600">→</span>
+              </a>
+            </div>
+
+            {/* Mobile Auth Bar */}
+            <div className="pt-2 border-t border-white/10 flex items-center justify-between">
+              {isMemberLoggedIn ? (
+                <div className="flex items-center justify-between w-full">
+                  <span className="text-[11px] font-mono text-amber-400">
+                    {memberEmail}
+                  </span>
+                  <button
+                    onClick={() => {
+                      localStorage.removeItem('aiks_member_session');
+                      setIsMemberLoggedIn(false);
+                      toast.info('Signed out of Member Portal.');
+                      setMobileMenuOpen(false);
+                    }}
+                    className="text-xs text-zinc-400 hover:text-white underline cursor-pointer"
+                  >
+                    Logout
+                  </button>
+                </div>
+              ) : (
+                <div className="grid grid-cols-2 gap-2 w-full pt-1">
+                  <Link
+                    href="/signin"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="text-center py-2 text-xs font-semibold text-zinc-200 bg-white/5 hover:bg-white/10 rounded transition"
+                  >
+                    Sign In
+                  </Link>
+                  <Link
+                    href="/signup"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="text-center py-2 text-xs font-bold bg-amber-400 hover:bg-amber-300 text-zinc-950 rounded transition shadow-sm"
+                  >
+                    Sign Up
+                  </Link>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* 2. HERO HEADER SECTION (Dark Wood Background + Big Typography) */}
