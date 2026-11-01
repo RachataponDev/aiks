@@ -152,7 +152,7 @@ export function WebDeveloperFooter() {
 
             <div className="space-y-1">
               <div className="text-lg font-black text-white tracking-tight">
-                Rdev [rachatapon.dev]
+                Rdev [rachatapon-dev.com]
               </div>
               <div className="text-sm font-semibold text-zinc-200">
                 Rachatapon Chaemsai
@@ -164,12 +164,12 @@ export function WebDeveloperFooter() {
 
             <div className="pt-2">
               <a
-                href="https://rachatapon.dev"
+                href="https://rachatapon-dev.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-300 hover:text-amber-200 transition group border-b border-amber-400/40 pb-0.5"
               >
-                <span>rachatapon.dev [Portfolio]</span>
+                <span>rachatapon-dev.com [Portfolio]</span>
                 <ArrowUpRight className="w-3.5 h-3.5 text-amber-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition" />
               </a>
             </div>
@@ -290,7 +290,7 @@ export function WebDeveloperFooter() {
       <div className="border-t border-zinc-900 bg-[#04060a] py-6 px-6 sm:px-8">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-zinc-500 font-mono">
           <div>
-            © 2026 LXVII • Lead System Developer Rachatapon Chaemsai (rachatapon.dev). All rights reserved.
+            © 2026 LXVII • Lead System Developer Rachatapon Chaemsai (rachatapon-dev.com). All rights reserved.
           </div>
           <div className="flex items-center gap-4 text-zinc-400">
             <span>English (US)</span>

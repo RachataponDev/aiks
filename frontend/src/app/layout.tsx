@@ -22,17 +22,17 @@ export const metadata: Metadata = {
     "Inventory Intelligence",
     "Restaurant Operations"
   ],
-  authors: [{ name: "Rdev (rachatapon.dev)", url: "https://rachatapon.dev" }],
+  authors: [{ name: "Rdev (rachatapon-dev.com)", url: "https://rachatapon-dev.com" }],
   creator: "Rachatapon Chaemsai",
   publisher: "LXVII Hospitality",
-  metadataBase: new URL("https://rachatapon.dev"),
+  metadataBase: new URL("https://aiks.rachatapon-dev.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "LXVII | Hospitality Intelligence & Operations Hub",
     description: "LXVII - Premium dining, live flash deals, and zero-waste operational intelligence.",
-    url: "https://rachatapon.dev",
+    url: "https://aiks.rachatapon-dev.com",
     siteName: "LXVII",
     locale: "en_US",
     type: "website",
@@ -66,11 +66,11 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "Restaurant",
-        "@id": "https://rachatapon.dev/#restaurant",
+        "@id": "https://aiks.rachatapon-dev.com/#restaurant",
         "name": "LXVII",
         "alternateName": "LXVII Bangkok",
         "description": "LXVII is a premier dining destination offering handcrafted Thai & French cafe classics, real-time in-store flash passes, and sustainable culinary operations.",
-        "url": "https://rachatapon.dev",
+        "url": "https://aiks.rachatapon-dev.com",
         "telephone": "+66 934741115",
         "email": "chaemsai_r@silpakorn.edu",
         "servesCuisine": ["Thai", "French", "Cafe", "Bakery"],
@@ -103,12 +103,12 @@ export default function RootLayout({
           "jobTitle": "Lead Web & System Developer",
           "affiliation": "BIM Silpakorn University",
           "email": "chaemsai_r@silpakorn.edu",
-          "url": "https://rachatapon.dev"
+          "url": "https://rachatapon-dev.com"
         }
       },
       {
         "@type": "SoftwareApplication",
-        "@id": "https://rachatapon.dev/#system",
+        "@id": "https://aiks.rachatapon-dev.com/#system",
         "name": "LXVII Operations Hub",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web",
@@ -116,7 +116,7 @@ export default function RootLayout({
         "author": {
           "@type": "Person",
           "name": "Rachatapon Chaemsai",
-          "url": "https://rachatapon.dev"
+          "url": "https://rachatapon-dev.com"
         }
       }
     ]
